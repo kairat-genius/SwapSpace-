@@ -18471,7 +18471,7 @@ footer .f-top {
       width: 320px; } }
   @media (min-width: 1025px) {
     .myaccount .account-element.e-left {
-      margin-left: auto; } }
+      margin: auto; } }
   @media (max-width: 1024px) {
     .myaccount .account-element.e-left {
       margin-top: 90px; } }
