@@ -1,0 +1,21 @@
+//Padding container
+@media(min-width:1600px) {
+    .container-240 {
+        width: 1430px;
+    }
+}
+
+// Container
+.container {
+    @media(max-width: 1500px) {
+        width:100%;
+        @include padding(40px);
+    }
+}
+
+.container {
+    @media(max-width: 1024px) {
+        width:100%;
+        @include padding(15px);
+    }
+}
