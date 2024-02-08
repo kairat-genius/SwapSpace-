@@ -1,10 +1,9 @@
 import React from "react";
-import BaseStyles from "../base.jsx";
+
 
 const Footer = () => {
     return (
         <footer>
-            <BaseStyles />
             <div className="f-top">
                 <div className="container container-240">
                     <div className="row">
