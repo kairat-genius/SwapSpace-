@@ -1,12 +1,11 @@
 from sqlalchemy import Column, Boolean, String, Integer, DateTime
-from settings.db import Base
 
-class User(Base):
+from fastapi_users.db import SQLAlchemyBaseUserTable
+
+from sqlalchemy.ext.declarative import DeclarativeMeta, declarative_base
+
+Base = declarative_base()
+class User(SQLAlchemyBaseUserTable, Base):
     __tablename__ = "user"
     id = Column(Integer, primary_key=True, index=True, unique=True)
-    name = Column(String, unique=True)
-    email = Column(String, unique=True)
-    password = Column(String)
-    date = Column(DateTime)
-    is_active = Column(Boolean, default=False)
-    is_admin = Column(Boolean, default=False)
+
